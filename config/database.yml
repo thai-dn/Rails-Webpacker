@@ -21,11 +21,10 @@ default: &default
 
 development:
   <<: *default
-  database: Test_development
-
-test:
-  <<: *default
-  database: Test_test
+  host: localhost
+  user: postgres
+  password: 12345678
+  database: test_development
 
 production:
   <<: *default
